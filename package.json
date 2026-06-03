@@ -1,0 +1,28 @@
+{
+  "name": "pokedex_typescript_lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "build": "tsc",
+    "start": "tsx src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielglpacheco-code/Pokedex_TypeScript_Lite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabrielglpacheco-code/Pokedex_TypeScript_Lite/issues"
+  },
+  "homepage": "https://github.com/gabrielglpacheco-code/Pokedex_TypeScript_Lite#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
