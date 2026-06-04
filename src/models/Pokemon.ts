@@ -4,9 +4,6 @@ export interface PokemonResumo {
     tipos: string[];
     altura:number;
     peso: number;
-    hp: number;
-    ataque: number;
-    defesa: number;
 }
 
 export interface PokemonApiResponse {
@@ -18,12 +15,5 @@ export interface PokemonApiResponse {
         type: {
             name: string;
         }
-    }[];
-    stats: {
-        base_stat: number;
-
-        stat: {
-            name: string;
-        };
     }[];
 }

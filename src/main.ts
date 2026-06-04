@@ -1,16 +1,13 @@
-console.log("pikachu, um pokemon eletrico...")
+import { buscarPokemon } from "./services/PokeApiService.js";
 
-import type { PokemonResumo } from "./models/Pokemon"
+async function main(): Promise<void> {
+  console.log("Pokédex TypeScript Lite iniciada!\n");
+  console.log("Buscando Pokémon...");
+  
+  const pokemon = await buscarPokemon(75);
+  
+  console.log("Busca finalizada!");
+  console.log(pokemon);
+}
 
-const pikachu: PokemonResumo = {
-    id: 25,
-    nome: "pikachu",
-    tipos: ["electric"],
-    altura: 4,
-    peso: 60,
-    hp: 35,
-    ataque: 55,
-    defesa: 40
-};
-
-console.log(pikachu);
+main();

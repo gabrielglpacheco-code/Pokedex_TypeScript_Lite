@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "tsc",
-    "start": "tsx src/main.ts"
+    "start": "node dist/main.ts"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/gabrielglpacheco-code/Pokedex_TypeScript_Lite/issues"
   },
