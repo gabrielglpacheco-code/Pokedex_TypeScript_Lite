@@ -1,13 +1,15 @@
 import { buscarPokemon } from "./services/PokeApiService.js";
+import { CatalogoPokemon } from "./services/BoxService.js";
 
 async function main(): Promise<void> {
-  console.log("Pokédex TypeScript Lite iniciada!\n");
-  console.log("Buscando Pokémon...");
+  const catalogo = new CatalogoPokemon();
+
+  const pikachu = await buscarPokemon("pikachu");
   
-  const pokemon = await buscarPokemon(75);
-  
-  console.log("Busca finalizada!");
-  console.log(pokemon);
+  if (pikachu !== null) {
+    catalogo.adicionarPokemon(pikachu);
+    catalogo.adicionarPokemon(pikachu); // tentativa de duplicata
+  }
 }
 
 main();
