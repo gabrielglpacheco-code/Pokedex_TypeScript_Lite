@@ -1,6 +1,8 @@
 import { buscarPokemon } from "../services/PokeApiService.js";
 import { CatalogoPokemon } from "../services/BoxService.js";
 
+//Classe responsável por orquestrar ações do terminal
+//Atua entre PokeApiService e o catálogo local
 export class TerminalController {
     private catalogo: CatalogoPokemon = new CatalogoPokemon();
 

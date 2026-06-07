@@ -1,3 +1,5 @@
+//Interface que representa o Pokémon simplificado
+//para ser usado dentro do sistema
 export interface PokemonResumo {
     id: number;
     nome: string;
@@ -6,6 +8,8 @@ export interface PokemonResumo {
     peso: number;
 }
 
+//Interface que representa os campos que serão usados 
+//dentre todos que a API retorna
 export interface PokemonApiResponse {
     id: number;
     name: string;
