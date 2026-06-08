@@ -37,12 +37,12 @@ Antes de executar o projeto, é necessário ter instalado:
 
 Clone o repositório:
 ```bash
-git clone https://github.com/gabrielglpacheco-code/Pokedex_Typescript_Lite.git
+git clone https://github.com/gabrielglpacheco-code/Pokedex_TypeScript_Lite.git
 ```
 
 Acesse a pasta do projeto:
 ```bash
-cd Pokedex_Typescript_Lite
+cd Pokedex_TypeScript_Lite
 ```
 
 Instale as dependências:
